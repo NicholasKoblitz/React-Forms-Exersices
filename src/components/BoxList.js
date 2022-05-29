@@ -11,7 +11,7 @@ const BoxList = () => {
         setBoxes(boxes => [...boxes, {id, width, height, backGroundColor}])
     }
     const removeBox = (id) => {
-        setBoxes(boxes => boxes.filter(box => box === id))
+        setBoxes(boxes => boxes.filter(box => id !== box.id))
     }
 
     return (
